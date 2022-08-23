@@ -1,0 +1,12 @@
+app=cat
+last_user=
+last_extension=png
+screenshot_dir=file:///home/rob/Documenti/emacs/screenshots/20220812_142030_671379705.png
+enable_imgur_upload=true
+action=4
+delay=0
+region=3
+show_mouse=1
+show_border=1
+show_in_folder=false
+

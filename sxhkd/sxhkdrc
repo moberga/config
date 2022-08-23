@@ -1,0 +1,27 @@
+super + e
+    emacsclient -c
+
+super + shift + m
+    /home/rob/.scripts/meteo_radar.sh
+
+super + F2
+      /home/rob/.scripts/SwitchCapsLock.sh
+
+# Change volume
+XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume @DEFAULT_SINK@ {+,-}2% && pkill -RTMIN+10 dwmblocks
+
+# Toggle mute
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 dwmblocks
+
+# Change volume, chunky
+shift + XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume @DEFAULT_SINK@ {+,-}10% && pkill -RTMIN+10 dwmblocks
+
+super + control + l
+    slock -m "Locked at $(date "+%a %d, %H:%M:%S") $(printf "\nRandom quote: ") $(fortune)"
+
+
+XK_Caps_Lock
+    rob-capslock

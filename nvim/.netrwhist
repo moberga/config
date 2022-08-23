@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/rob'
+let g:netrw_dirhist_8='/home/rob/.config/nvim/general'
+let g:netrw_dirhist_7='/home/rob/.config/nvim'
+let g:netrw_dirhist_6='/home/rob/.config'
+let g:netrw_dirhist_5='/home/rob/.config/nvim/keys'
+let g:netrw_dirhist_4='/home/rob/.config/diary'
+let g:netrw_dirhist_3='/home/rob/.config/zsh/zsh-vi-mode'
+let g:netrw_dirhist_2='/home/rob/.scripts'
+let g:netrw_dirhist_1='/home/rob/.config/nvim'
