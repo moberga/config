@@ -1,6 +1,12 @@
 super + e
     emacsclient -c
 
+super + shift + e
+    thunar
+
+super + b
+      firefox
+
 super + shift + m
     /home/rob/.scripts/meteo_radar.sh
 
@@ -22,6 +28,9 @@ shift + XF86Audio{Raise,Lower}Volume
 super + control + l
     slock -m "Locked at $(date "+%a %d, %H:%M:%S") $(printf "\nRandom quote: ") $(fortune)"
 
+super + shift + Return
+      st
 
-XK_Caps_Lock
-    rob-capslock
+
+# XK_Caps_Lock
+#     rob-capslock
