@@ -1,0 +1,81 @@
+# Put this in your .bashrc where PS1 should be
+#      if [ -f ~/.bash_prompt ]; then
+#        . ~/.bash_prompt
+#      fi
+
+
+# Define some basic colors using tput (8-bit color: 256 colors)
+green="\[$(tput setaf 2)\]" #grey
+magenta="\[$(tput setaf 5)\]" #green
+yellow="\[$(tput setaf 3)\]"
+orange="\[$(tput setaf 208)\]"
+l_blue="\[$(tput setaf 12)\]"
+blue="\[$(tput setaf 4)\]"
+grey="\[$(tput setaf 7)\]"
+cyan="\[$(tput setaf 6)\]"
+bold="\[$(tput bold)\]"
+reset="\[$(tput sgr0)\]"
+
+# Define basic colors to be used in prompt
+## The color for username (cyan, for root user: magenta)
+username_color="${reset}${bold}${cyan}\$([[ \${EUID} == 0 ]] && echo \"${magenta}\")";
+## Color of @ and ✗ symbols (orange)
+at_color=$reset$bold$orange
+## Color of host/pc-name (blue)
+host_color=$reset$bold$blue
+## Color of current working directory (yellow)
+directory_color=$reset$bold$yellow
+date_color=$reset$bold$grey
+shell_color=$reset$bold$l_blue
+## Color for other characters (like the arrow)
+etc_color=$reset$green
+# If last operation did not succeded, add [✗]- to the prompt
+on_error="\$([[ \$? != 0 ]] && echo \"${etc_color}┴[${at_color}ERROR${etc_color}]─\")"
+# The last symbol in prompt ($, for root user: #)
+symbol="${reset}${bold}${magenta}$(if [[ ${EUID} == 0 ]]; then echo '#'; else echo '$'; fi)"
+
+
+# Setup the prompt/prefix for linux terminal
+PS1="${etc_color}┌──${on_error}[";
+PS1+="${username_color}\u"; # \u=Username
+PS1+="${at_color}@";
+PS1+="${host_color}\h" #\h=Host
+PS1+="${etc_color}]─[";
+PS1+="${directory_color}\w"; # \w=Working directory
+PS1+="${etc_color}]"; # close bracket
+PS1+="${etc_color}─["; #open bracket
+PS1+="${directory_color}f:\$(/bin/ls -A1 | /usr/bin/wc -l | /bin/sed 's: ::g')"; #
+PS1+="${etc_color}]"; # close bracket
+#PS1+="${etc_color}─["; #open bracket
+#PS1+="${directory_color}\$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/totale //')"; #
+#PS1+="${etc_color}]"; # close bracket
+PS1+="${etc_color}─["; #open bracket
+PS1+="${shell_color}\!"; # \! is history
+PS1+="${etc_color}]"; # close bracket
+PS1+="${etc_color}─["; #open bracket
+PS1+="${shell_color}\j"; # \j is jobs
+PS1+="${etc_color}]"; # close bracket
+PS1+="${etc_color}─["; #open bracket
+PS1+="${date_color}\D{%a%d%b %H:%M}"; # \d is date
+PS1+="${etc_color}]"; # close bracket
+#PS1+="${etc_color}─["; #open bracket
+#PS1+="${date_color}\t"; # \t is time
+#PS1+="${etc_color}]"; # close bracket
+PS1+="${etc_color}\n";
+PS1+="${etc_color}└─── "; # \n=New Line
+PS1+="${symbol}${reset} ";
+
+export PS1
+
+#\$</strong>(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files \[\033[1;33m\]<strong>\$</strong>(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b\[\033[0m\] -> \[\033[0m\]
+
+unset green
+unset magenta
+unset yellow
+unset orange
+unset l_blue
+unset blue
+unset grey
+unset cyan
+unset bold
+unset reset

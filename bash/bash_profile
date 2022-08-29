@@ -1,0 +1,13 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc;
+[[ -f ~/.profile ]] && . ~/.profile;
+
+if [[ "$(tty)" == "/dev/tty2" ]]; then
+   pgrep xfce4-session || exec startxfce4
+elif [[ "$(tty)" == "/dev/tty1" ]]; then
+   pgrep dwm || exec startx
+fi
+

@@ -1,8 +1,4 @@
-emacs --daemon &
-dunst &
-sxhkd &
-dwmblocks &
-/home/rob/.scripts/synclient-dwm.sh &
+dwm-autostart &
 
 #exec dwm
 while type dwm > /dev/null ; do dwm && continue || break ; done
