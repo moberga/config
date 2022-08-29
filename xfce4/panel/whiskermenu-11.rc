@@ -1,5 +1,5 @@
 favorites=firefox.desktop,emacs.desktop,menulibre-emacs-client.desktop,Alacritty.desktop,kitty.desktop,xfce4-terminal.desktop,xterm.desktop,thunar.desktop,kotatogramdesktop.desktop,menulibre-new-launcher.desktop,zotero.desktop
-recent=menulibre-emacs-client.desktop,st.desktop,emacs.desktop,kotatogramdesktop.desktop,smplayer.desktop,org.xfce.Parole.desktop,xterm.desktop,org.gnome.FontManager.desktop,Alacritty.desktop,firefox.desktop
+recent=cups.desktop,system-config-printer.desktop,firefox.desktop,menulibre-emacs-client.desktop,st.desktop,emacs.desktop,kotatogramdesktop.desktop,smplayer.desktop,org.xfce.Parole.desktop,xterm.desktop
 button-icon=distributor-logo-archlinux
 button-single-row=false
 show-button-title=false

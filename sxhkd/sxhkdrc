@@ -28,8 +28,11 @@ shift + XF86Audio{Raise,Lower}Volume
 super + control + l
     slock -m "Locked at $(date "+%a %d, %H:%M:%S") $(printf "\nRandom quote: ") $(fortune)"
 
-super + shift + Return
+super + alt + Return
       st
+
+super + shift + Return
+      rofi -show run 
 
 
 # XK_Caps_Lock

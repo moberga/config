@@ -1,6 +1,6 @@
 configuration {
 	modi: "window,run,drun,ssh,emoji,calc";
-	font: "IBM Plex Mono 16";
+	font: "IBM Plex Mono 12";
 /*	location: 1;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -148,7 +148,8 @@ configuration {
   }
 }
 
-@theme "gruvbox-custom"
+/* @theme "gruvbox-custom" */
+@import "~/.cache/wal/colors-rofi-dark"
 
 window {
     anchor:     north;

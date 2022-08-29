@@ -38,3 +38,5 @@ pkill dunst && dunst &
 # === dmenu ===
 # =============
 sed '/SchemeNorm/{p;s//SchemeMid/g;};/SchemeSel/{p;s//SchemeNormHighlight/g};/SchemeOut/{p;s//SchemeSelHighlight/g}' ~/.cache/wal/colors-wal-dmenu.h -i
+sed '/SchemeUrg/d' -i ~/.cache/wal/colors-wal-dwm.h
+sed '/padding: 2.5ch;/d' -i ~/.cache/wal/colors-rofi-dark.rasi 

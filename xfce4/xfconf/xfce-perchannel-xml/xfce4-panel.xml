@@ -59,6 +59,7 @@
       <property name="menu-is-primary" type="bool" value="true"/>
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="system-config-printer"/>
         <value type="string" value="thunar"/>
         <value type="string" value="wi-fi network connection “tim-19219925_ext” active: tim-19219925_ext (40%)"/>
         <value type="string" value="no network connection"/>
