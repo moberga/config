@@ -59,6 +59,7 @@
       <property name="menu-is-primary" type="bool" value="true"/>
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “fritz-die-katze” active: fritz-die-katze (60%)"/>
         <value type="string" value="system-config-printer"/>
         <value type="string" value="thunar"/>
         <value type="string" value="wi-fi network connection “tim-19219925_ext” active: tim-19219925_ext (40%)"/>
@@ -102,7 +103,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1112;firefox.instance1137;firefox.instance1166;firefox.instance1292;firefox.instance1339;firefox.instance1413;firefox.instance1488;firefox.instance1798;firefox.instance2910;firefox.instance3162;firefox.instance33011;firefox.instance3643;firefox.instance3695;firefox.instance677;firefox.instance751;firefox.instance757;firefox.instance771;firefox.instance777;firefox.instance813;firefox.instance847;firefox.instance950;firefox.instance967;io.github.celluloid_player.Celluloid.instance-1;smplayer"/>
+      <property name="mpris-players" type="string" value="firefox.instance1112;firefox.instance1137;firefox.instance1166;firefox.instance1292;firefox.instance1339;firefox.instance1413;firefox.instance1488;firefox.instance1798;firefox.instance1799;firefox.instance2910;firefox.instance3162;firefox.instance33011;firefox.instance3643;firefox.instance3695;firefox.instance677;firefox.instance751;firefox.instance757;firefox.instance771;firefox.instance777;firefox.instance813;firefox.instance847;firefox.instance950;firefox.instance967;io.github.celluloid_player.Celluloid.instance-1;smplayer"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-12" type="string" value="clock">

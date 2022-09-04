@@ -1,3 +1,9 @@
+super + Return
+    st
+
+super + shift + Return
+    alacritty
+
 super + e
     emacsclient -c
 
@@ -31,9 +37,14 @@ super + control + l
 super + alt + Return
       st
 
-super + shift + Return
-      rofi -show run 
+super + v
+      rofi -show drun 
+
+super + c
+    xfce4-clipman-history
 
 
 # XK_Caps_Lock
 #     rob-capslock
+
+

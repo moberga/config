@@ -6,8 +6,13 @@
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="false"/>
+    <property name="width" type="int" value="749"/>
+    <property name="height" type="int" value="742"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="50"/>
+  </property>
+  <property name="folders" type="empty">
+    <property name="last-used-media" type="string" value="/home/rob/Videos/anime/Dororo"/>
   </property>
 </channel>
